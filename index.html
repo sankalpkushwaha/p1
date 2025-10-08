@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mero Kirana</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- Link Swiper's CSS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+  <body >
+
+    <header class="bg-danger">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-2">
+            <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 131 58"><path fill="#FFF" fill-rule="evenodd" d="M45.6 40.6l-5.4 3-20-11.5-5.2 3 20.2 11.5-5.4 3.1L9.6 38.1l-4.2 2.5v-6.2l34.8-20.1 5.4 3-20 11.7 20 11.6zM5.4 22.3l24.3-14 5.4 3L5.4 28.5v-6.2zm44.3-8.8L26.8.4C26-.1 25-.1 24.2.4L1.3 13.5A3 3 0 0 0 0 15.8v26.4c0 1 .5 1.8 1.3 2.3l22.9 13.1a2.7 2.7 0 0 0 2.6 0l22.9-13.1c.8-.5 1.3-1.4 1.3-2.3V15.8c0-1-.5-1.8-1.3-2.3zM110.8 35h2.9v-3.1h-2.9v3zm13.8-10.4h-2.4V43h-2.8V31.9h-2.9v3c0 1-.3 1.6-.8 2.3-.6.5-1.3.8-2 .8h-2.9a3 3 0 0 1-2-.8c-.5-.7-.8-1.4-.8-2.3v-3c0-.8.3-1.6.8-2.2.6-.6 1.2-.9 2-.9h8.6v-4.2h-14.2V43h-2.4V24.6h-3.3v6.1c0 .9-.4 1.6-.9 2.2-.5.6-1.1.9-1.8.9H94v6.1h5.3V43H94c-.8 0-1.4-.3-2-.9-.4-.6-.7-1.3-.7-2.2V27.7H94v3h2.7v-6.1H81v3h4.2c.8 0 1.5.4 2 1 .6.6.9 1.3.9 2.1V37c0 .8-.3 1.6-.9 2.2-.5.5-1.2.8-2 .8h-2.8v-3h2.8v-6.2H81V43h-2.8v-3H74c-.8 0-1.4-.4-2-1a3 3 0 0 1-.8-2.1v-6.2c0-.8.3-1.5.8-2.1.6-.6 1.2-1 2-1h3v3.1h-3V37h4.3V24.6h-7.1V24h-3.3v18h-3V24H62v-3h3v-3a2.9 2.9 0 0 1 3-3h9c.7 0 1.4.3 2 .9.6.6 1.7 2.2 3.2 4.7H79a41 41 0 0 1-1-1.7c-.2-.2-.4-.5-.7-.6-.2-.2-.5-.3-.9-.3H68v3h3.4v.5H131v3.1h-2.8V43h-2.4V24.6h-1.2z"></path></svg>
+          </div>
+          <div class="col-lg-7">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2 ps-5 searchbox" type="search" placeholder="Search for products or categories" aria-label="Search"/>
+        
+            </form>
+          </div>
+          <div class="col-lg-3">
+            <div class="d-flex gap-3 text-white">
+              <div class="d-flex gap-2 align-items-center border-end pe-4"> 
+                <img class="pe-2" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOSIgaGVpZ2h0PSIzMCI+PHBhdGggZmlsbD0iI0ZGRiIgZD0iTTE2Ljk3IDEuNkw0LjQuNWExLjkgMS45IDAgMCAwLTIuMDcgMS43MkwuMiAyNi4zNGExLjkgMS45IDAgMCAwIDEuNzQgMi4wNmwxMi41OCAxLjFhMS45IDEuOSAwIDAgMCAyLjA3LTEuNzJMMTguNyAzLjY1YTEuOSAxLjkgMCAwIDAtMS43NC0yLjA1em0tOC40Mi42NGw0LjAyLjM1Yy4xMyAwIC4yMy4xMi4yMi4yNWEuMjMuMjMgMCAwIDEtLjI2LjJMOC41MSAyLjdhLjIzLjIzIDAgMCAxLS4yMS0uMjUuMjMuMjMgMCAwIDEgLjI1LS4yek04LjMyIDI4YS45NS45NSAwIDAgMS0uODctMS4wMi45Ni45NiAwIDAgMSAxLjkxLjE3Ljk1Ljk1IDAgMCAxLTEuMDQuODV6bTcuMS0xLjk0bC0xMy43NS0xLjJMMy41NSAzLjQ0bDEzLjc0IDEuMi0xLjg3IDIxLjQyeiIvPjwvc3ZnPg==" alt="">
+                <div>
+                  <small>ORDER</small>
+                  <h6>AT01-4511000</h6>
+                </div>
+              </div>
+
+              <div class="d-flex gap-4 align-items-center "> 
+                
+
+<button type="button" class="btn p-2 position-relative">
+   <svg class="pe-2 w-100" xmlns="http://www.w3.org/2000/svg" width="25" fill="#FFF" viewBox="0 0 486.569 486.569"><path d="M146.069 320.369h268.1c30.4 0 55.2-24.8 55.2-55.2v-112.8-.4-.8c0-.2 0-.4-.1-.6 0-.2-.1-.5-.1-.7s-.1-.4-.1-.6c-.1-.2-.1-.4-.2-.7-.1-.2-.1-.4-.2-.6-.1-.2-.1-.4-.2-.6-.1-.2-.2-.4-.3-.7-.1-.2-.2-.4-.3-.5l-.3-.6c-.1-.2-.2-.3-.3-.5-.1-.2-.3-.4-.4-.6-.1-.2-.2-.3-.4-.5-.1-.2-.3-.3-.4-.5s-.3-.3-.4-.5-.3-.3-.4-.4l-.5-.5c-.2-.1-.3-.3-.5-.4-.2-.1-.4-.3-.6-.4-.2-.1-.3-.2-.5-.3s-.4-.2-.6-.4l-.6-.3-.6-.3-.6-.3c-.2-.1-.4-.1-.6-.2-.2-.1-.5-.2-.7-.2s-.4-.1-.5-.1c-.3-.1-.5-.1-.8-.1-.1 0-.2-.1-.4-.1l-339.8-46.9v-47.4c0-.5 0-1-.1-1.4 0-.1 0-.2-.1-.4 0-.3-.1-.6-.1-.9-.1-.3-.1-.5-.2-.8 0-.2-.1-.3-.1-.5l-.3-.9c0-.1-.1-.3-.1-.4-.1-.3-.2-.5-.4-.8-.1-.1-.1-.3-.2-.4-.1-.2-.2-.4-.4-.6-.1-.2-.2-.3-.3-.5s-.2-.3-.3-.5-.3-.4-.4-.6l-.3-.3-.6-.6-.3-.3c-.2-.2-.4-.4-.7-.6-.1-.1-.3-.2-.4-.3-.2-.2-.4-.3-.6-.5-.3-.2-.6-.4-.8-.5-.1-.1-.2-.1-.3-.2-.4-.2-.9-.4-1.3-.6l-73.7-31c-6.9-2.9-14.8.3-17.7 7.2s.3 14.8 7.2 17.7l65.4 27.6v295.8c0 28 21 51.2 48.1 54.7-4.9 8.2-7.8 17.8-7.8 28 0 30.1 24.5 54.5 54.5 54.5s54.5-24.5 54.5-54.5c0-10-2.7-19.5-7.5-27.5h121.4c-4.8 8.1-7.5 17.5-7.5 27.5 0 30.1 24.5 54.5 54.5 54.5s54.5-24.5 54.5-54.5-24.5-54.5-54.5-54.5h-255c-15.6 0-28.2-12.7-28.2-28.2v-36.6c8.2 4.8 17.9 7.6 28.2 7.6zm67.2 111.6c0 15.2-12.4 27.5-27.5 27.5s-27.5-12.4-27.5-27.5 12.4-27.5 27.5-27.5 27.5 12.3 27.5 27.5zm215.4 0c0 15.2-12.4 27.5-27.5 27.5s-27.5-12.4-27.5-27.5 12.4-27.5 27.5-27.5 27.5 12.3 27.5 27.5zm-14.5-138.6h-268.1c-15.6 0-28.2-12.7-28.2-28.2v-145.9l324.5 44.7v101.1c0 15.7-12.7 28.3-28.2 28.3z"></path></svg>
+                
+  <span class="position-absolute top-0 start-50  badge rounded-pill bg-white text-danger">
+    1
+    <span class="visually-hidden">unread messages</span>
+  </span>
+</button>
+
+
+                
+                <div>
+                  <h6>Login</h6>
+                </div>
+              </div>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="navbar bg-body-tertiary navbar-expand-lg shadow">
+  <div class="container">
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+          
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+              Grocery
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">1.Rice & Rice Products</a></li>
+              <li><a class="dropdown-item" href="#">Atta, Flour & Suji</a></li>
+              <li><a class="dropdown-item" href="#">Cooking Oil & Ghee</a></li>
+              <li><a class="dropdown-item" href="#">Atta, Flour & Suji</a></li>
+              <li><a class="dropdown-item" href="#">Cooking Oil & Ghee</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+              Bakery & Dairy
+            </a>
+            <ul class="dropdown-menu">
+              
+              <li><a class="dropdown-item" href="#">Atta, Flour & Suji</a></li>
+              <li><a class="dropdown-item" href="#">Cooking Oil & Ghee</a></li>
+              <li><a class="dropdown-item" href="#">Atta, Flour & Suji</a></li>
+              <li><a class="dropdown-item" href="#">Cooking Oil & Ghee</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+              Grocery
+            </a>
+            <ul class="dropdown-menu">
+              
+              <li><a class="dropdown-item" href="#">Atta, Flour & Suji</a></li>
+              <li><a class="dropdown-item" href="#">Cooking Oil & Ghee</a></li>
+              <li><a class="dropdown-item" href="#">Atta, Flour & Suji</a></li>
+              <li><a class="dropdown-item" href="#">Cooking Oil & Ghee</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+              Grocery
+            </a>
+            <ul class="dropdown-menu">
+              
+              <li><a class="dropdown-item" href="#">Atta, Flour & Suji</a></li>
+              <li><a class="dropdown-item" href="#">Cooking Oil & Ghee</a></li>
+              <li><a class="dropdown-item" href="#">Atta, Flour & Suji</a></li>
+              <li><a class="dropdown-item" href="#">Cooking Oil & Ghee</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+              Grocery
+            </a>
+            <ul class="dropdown-menu">
+              
+              <li><a class="dropdown-item" href="#">Atta, Flour & Suji</a></li>
+              <li><a class="dropdown-item" href="#">Cooking Oil & Ghee</a></li>
+              <li><a class="dropdown-item" href="#">Atta, Flour & Suji</a></li>
+              <li><a class="dropdown-item" href="#">Cooking Oil & Ghee</a></li>
+            </ul>
+          </li>
+
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+    <section>
+      <div class="container">
+        <img class="w-100" src="https://www.merokirana.com/archive/KiranaOffer/ea66466e45c949bb8381d39a24f8409b.jpg" alt="">
+      </div>
+    </section>
+
+    <section class="bg-body-tertiary py-4">
+      <div class="container">
+        <p>Latest Products <span class="text-danger ps-5">VIEW ALL</span></p>
+        <!-- swipper js -->
+        <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="border bg-white">
+          <div class="p-3">
+            <img class="w-100" src="https://www.merokirana.com/archive/KiranaProduct/c35423cdeb6948ddba8b7d01cc80a5a4.jpg" alt="">
+          <p class="fs-6 py-2">Kejjan’s Kesar Chandan Face Pack, 225gm</p>
+          <p>NRs.<span class="fw-bold">1100</span></p>
+
+          <div class="d-flex align-items-center ">
+            <span class="pe-2">Qty</span>
+            <div class="btn-group qty " role="group" aria-label="Basic outlined example">
+            <button type="button" class="btn-outline-primary rounded-start-pill">-</button>
+            <button type="button" class="btn-outline-primary">
+              <input class="w-100"  type="number">
+            </button>
+            <button type="button" class="btn-outline-primary rounded-end-circle">+</button>
+          </div>
+          </div>
+          </div>
+
+          <button class="btn btn-danger w-100 rounded-0 hover">Add to Shopping List</button>
+        </div>
+      </div>
+      
+      <div class="swiper-slide">
+        <div class="border bg-white">
+          <div class="p-3">
+            <img class="w-100" src="https://www.merokirana.com/archive/KiranaProduct/c35423cdeb6948ddba8b7d01cc80a5a4.jpg" alt="">
+          <p class="fs-6 py-2">Kejjan’s Kesar Chandan Face Pack, 225gm</p>
+          <p>NRs.<span class="fw-bold">1100</span></p>
+
+          <div class="d-flex align-items-center ">
+            <span class="pe-2">Qty</span>
+            <div class="btn-group qty " role="group" aria-label="Basic outlined example">
+            <button type="button" class="btn-outline-primary rounded-start-pill">-</button>
+            <button type="button" class="btn-outline-primary">
+              <input class="w-100"  type="number">
+            </button>
+            <button type="button" class="btn-outline-primary rounded-end-circle">+</button>
+          </div>
+          </div>
+          </div>
+
+          <button class="btn btn-danger w-100 rounded-0 hover">Add to Shopping List</button>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="border bg-white">
+          <div class="p-3">
+            <img class="w-100" src="https://www.merokirana.com/archive/KiranaProduct/c35423cdeb6948ddba8b7d01cc80a5a4.jpg" alt="">
+          <p class="fs-6 py-2">Kejjan’s Kesar Chandan Face Pack, 225gm</p>
+          <p>NRs.<span class="fw-bold">1100</span></p>
+
+          <div class="d-flex align-items-center ">
+            <span class="pe-2">Qty</span>
+            <div class="btn-group qty " role="group" aria-label="Basic outlined example">
+            <button type="button" class="btn-outline-primary rounded-start-pill">-</button>
+            <button type="button" class="btn-outline-primary">
+              <input class="w-100"  type="number">
+            </button>
+            <button type="button" class="btn-outline-primary rounded-end-circle">+</button>
+          </div>
+          </div>
+          </div>
+
+          <button class="btn btn-danger w-100 rounded-0 hover">Add to Shopping List</button>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="border bg-white">
+          <div class="p-3">
+            <img class="w-100" src="https://www.merokirana.com/archive/KiranaProduct/c35423cdeb6948ddba8b7d01cc80a5a4.jpg" alt="">
+          <p class="fs-6 py-2">Kejjan’s Kesar Chandan Face Pack, 225gm</p>
+          <p>NRs.<span class="fw-bold">1100</span></p>
+
+          <div class="d-flex align-items-center ">
+            <span class="pe-2">Qty</span>
+            <div class="btn-group qty " role="group" aria-label="Basic outlined example">
+            <button type="button" class="btn-outline-primary rounded-start-pill">-</button>
+            <button type="button" class="btn-outline-primary">
+              <input class="w-100"  type="number">
+            </button>
+            <button type="button" class="btn-outline-primary rounded-end-circle">+</button>
+          </div>
+          </div>
+          </div>
+
+          <button class="btn btn-danger w-100 rounded-0 hover">Add to Shopping List</button>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="border bg-white">
+          <div class="p-3">
+            <img class="w-100" src="https://www.merokirana.com/archive/KiranaProduct/c35423cdeb6948ddba8b7d01cc80a5a4.jpg" alt="">
+          <p class="fs-6 py-2">Kejjan’s Kesar Chandan Face Pack, 225gm</p>
+          <p>NRs.<span class="fw-bold">1100</span></p>
+
+          <div class="d-flex align-items-center ">
+            <span class="pe-2">Qty</span>
+            <div class="btn-group qty " role="group" aria-label="Basic outlined example">
+            <button type="button" class="btn-outline-primary rounded-start-pill">-</button>
+            <button type="button" class="btn-outline-primary">
+              <input class="w-100"  type="number">
+            </button>
+            <button type="button" class="btn-outline-primary rounded-end-circle">+</button>
+          </div>
+          </div>
+          </div>
+
+          <button class="btn btn-danger w-100 rounded-0 hover">Add to Shopping List</button>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="border bg-white">
+          <div class="p-3">
+            <img class="w-100" src="https://www.merokirana.com/archive/KiranaProduct/c35423cdeb6948ddba8b7d01cc80a5a4.jpg" alt="">
+          <p class="fs-6 py-2">Kejjan’s Kesar Chandan Face Pack, 225gm</p>
+          <p>NRs.<span class="fw-bold">1100</span></p>
+
+          <div class="d-flex align-items-center ">
+            <span class="pe-2">Qty</span>
+            <div class="btn-group qty " role="group" aria-label="Basic outlined example">
+            <button type="button" class="btn-outline-primary rounded-start-pill">-</button>
+            <button type="button" class="btn-outline-primary">
+              <input class="w-100"  type="number">
+            </button>
+            <button type="button" class="btn-outline-primary rounded-end-circle">+</button>
+          </div>
+          </div>
+          </div>
+
+          <button class="btn btn-danger w-100 rounded-0 hover">Add to Shopping List</button>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="border bg-white">
+          <div class="p-3">
+            <img class="w-100" src="https://www.merokirana.com/archive/KiranaProduct/c35423cdeb6948ddba8b7d01cc80a5a4.jpg" alt="">
+          <p class="fs-6 py-2">Kejjan’s Kesar Chandan Face Pack, 225gm</p>
+          <p>NRs.<span class="fw-bold">1100</span></p>
+
+          <div class="d-flex align-items-center ">
+            <span class="pe-2">Qty</span>
+            <div class="btn-group qty " role="group" aria-label="Basic outlined example">
+            <button type="button" class="btn-outline-primary rounded-start-pill">-</button>
+            <button type="button" class="btn-outline-primary">
+              <input class="w-100"  type="number">
+            </button>
+            <button type="button" class="btn-outline-primary rounded-end-circle">+</button>
+          </div>
+          </div>
+          </div>
+
+          <button class="btn btn-danger w-100 rounded-0 hover">Add to Shopping List</button>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="border bg-white">
+          <div class="p-3">
+            <img class="w-100" src="https://www.merokirana.com/archive/KiranaProduct/c35423cdeb6948ddba8b7d01cc80a5a4.jpg" alt="">
+          <p class="fs-6 py-2">Kejjan’s Kesar Chandan Face Pack, 225gm</p>
+          <p>NRs.<span class="fw-bold">1100</span></p>
+
+          <div class="d-flex align-items-center ">
+            <span class="pe-2">Qty</span>
+            <div class="btn-group qty " role="group" aria-label="Basic outlined example">
+            <button type="button" class="btn-outline-primary rounded-start-pill">-</button>
+            <button type="button" class="btn-outline-primary">
+              <input class="w-100"  type="number">
+            </button>
+            <button type="button" class="btn-outline-primary rounded-end-circle">+</button>
+          </div>
+          </div>
+          </div>
+
+          <button class="btn btn-danger w-100 rounded-0 hover">Add to Shopping List</button>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="border bg-white">
+          <div class="p-3">
+            <img class="w-100" src="https://www.merokirana.com/archive/KiranaProduct/c35423cdeb6948ddba8b7d01cc80a5a4.jpg" alt="">
+          <p class="fs-6 py-2">Kejjan’s Kesar Chandan Face Pack, 225gm</p>
+          <p>NRs.<span class="fw-bold">1100</span></p>
+
+          <div class="d-flex align-items-center ">
+            <span class="pe-2">Qty</span>
+            <div class="btn-group qty " role="group" aria-label="Basic outlined example">
+            <button type="button" class="btn-outline-primary rounded-start-pill">-</button>
+            <button type="button" class="btn-outline-primary">
+              <input class="w-100"  type="number">
+            </button>
+            <button type="button" class="btn-outline-primary rounded-end-circle">+</button>
+          </div>
+          </div>
+          </div>
+
+          <button class="btn btn-danger w-100 rounded-0 hover">Add to Shopping List</button>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="border bg-white">
+          <div class="p-3">
+            <img class="w-100" src="https://www.merokirana.com/archive/KiranaProduct/c35423cdeb6948ddba8b7d01cc80a5a4.jpg" alt="">
+          <p class="fs-6 py-2">Kejjan’s Kesar Chandan Face Pack, 225gm</p>
+          <p>NRs.<span class="fw-bold">1100</span></p>
+
+          <div class="d-flex align-items-center ">
+            <span class="pe-2">Qty</span>
+            <div class="btn-group qty " role="group" aria-label="Basic outlined example">
+            <button type="button" class="btn-outline-primary rounded-start-pill">-</button>
+            <button type="button" class="btn-outline-primary">
+              <input class="w-100"  type="number">
+            </button>
+            <button type="button" class="btn-outline-primary rounded-end-circle">+</button>
+          </div>
+          </div>
+          </div>
+
+          <button class="btn btn-danger w-100 rounded-0 hover">Add to Shopping List</button>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="border bg-white">
+          <div class="p-3">
+            <img class="w-100" src="https://www.merokirana.com/archive/KiranaProduct/c35423cdeb6948ddba8b7d01cc80a5a4.jpg" alt="">
+          <p class="fs-6 py-2">Kejjan’s Kesar Chandan Face Pack, 225gm</p>
+          <p>NRs.<span class="fw-bold">1100</span></p>
+
+          <div class="d-flex align-items-center ">
+            <span class="pe-2">Qty</span>
+            <div class="btn-group qty " role="group" aria-label="Basic outlined example">
+            <button type="button" class="btn-outline-primary rounded-start-pill">-</button>
+            <button type="button" class="btn-outline-primary">
+              <input class="w-100"  type="number">
+            </button>
+            <button type="button" class="btn-outline-primary rounded-end-circle">+</button>
+          </div>
+          </div>
+          </div>
+
+          <button class="btn btn-danger w-100 rounded-0 hover">Add to Shopping List</button>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="border bg-white">
+          <div class="p-3">
+            <img class="w-100" src="https://www.merokirana.com/archive/KiranaProduct/c35423cdeb6948ddba8b7d01cc80a5a4.jpg" alt="">
+          <p class="fs-6 py-2">Kejjan’s Kesar Chandan Face Pack, 225gm</p>
+          <p>NRs.<span class="fw-bold">1100</span></p>
+
+          <div class="d-flex align-items-center ">
+            <span class="pe-2">Qty</span>
+            <div class="btn-group qty " role="group" aria-label="Basic outlined example">
+            <button type="button" class="btn-outline-primary rounded-start-pill">-</button>
+            <button type="button" class="btn-outline-primary">
+              <input class="w-100"  type="number">
+            </button>
+            <button type="button" class="btn-outline-primary rounded-end-circle">+</button>
+          </div>
+          </div>
+          </div>
+
+          <button class="btn btn-danger w-100 rounded-0 hover">Add to Shopping List</button>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+    </section>
+    
+    <section>
+      <div class="container">
+        <div class="row ">
+          <div class="col-lg-6">
+            <img class="w-100" src="https://www.merokirana.com/archive/KiranaCollection/bbc654d1a0214d0083d8812763278450.jpeg" alt="">
+          </div>
+          <div class="col-lg-6">
+            <img class="w-100" src="https://www.merokirana.com/archive/KiranaCollection/bbc654d1a0214d0083d8812763278450.jpeg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-body-secondary py-5 mt-3 ">
+      
+      <div class="container ">
+        <h5 class="text-secondary">Featured Categories</h5>
+        <div class="row ">
+          <div class="col-lg-2">
+            <img class="w-100 " src="https://www.merokirana.com/archive/KiranaCategory/77c89f32844045159793d6f63a792adb.jpg" alt="">
+            <h6>Deodrant & Fragrance</h6>
+          </div>
+          <div class="col-lg-2">
+            <img class="w-100" src="https://www.merokirana.com/archive/KiranaCategory/77c89f32844045159793d6f63a792adb.jpg" alt="">
+            <h6>Deodrant & Fragrance</h6>
+          </div>
+          <div class="col-lg-2">
+            <img class="w-100" src="https://www.merokirana.com/archive/KiranaCategory/77c89f32844045159793d6f63a792adb.jpg" alt="">
+            <h6>Deodrant & Fragrance</h6>
+          </div>
+          <div class="col-lg-2">
+            <img class="w-100" src="https://www.merokirana.com/archive/KiranaCategory/77c89f32844045159793d6f63a792adb.jpg" alt="">
+            <h6>Deodrant & Fragrance</h6>
+          </div>
+          <div class="col-lg-2">
+            <img class="w-100" src="https://www.merokirana.com/archive/KiranaCategory/77c89f32844045159793d6f63a792adb.jpg" alt="">
+            <h6>Deodrant & Fragrance</h6>
+          </div>
+          <div class="col-lg-2">
+            <img class="w-100" src="https://www.merokirana.com/archive/KiranaCategory/77c89f32844045159793d6f63a792adb.jpg" alt="">
+            <h6>Deodrant & Fragrance</h6>
+          </div>
+          <div class="col-lg-2">
+            <img class="w-100" src="https://www.merokirana.com/archive/KiranaCategory/77c89f32844045159793d6f63a792adb.jpg" alt="">
+            <h6>Deodrant & Fragrance</h6>
+          </div>
+          <div class="col-lg-2">
+            <img class="w-100" src="https://www.merokirana.com/archive/KiranaCategory/77c89f32844045159793d6f63a792adb.jpg" alt="">
+            <h6>Deodrant & Fragrance</h6>
+          </div>
+          <div class="col-lg-2">
+            <img class="w-100" src="https://www.merokirana.com/archive/KiranaCategory/77c89f32844045159793d6f63a792adb.jpg" alt="">
+            <h6>Deodrant & Fragrance</h6>
+          </div>
+          <div class="col-lg-2">
+            <img class="w-100" src="https://www.merokirana.com/archive/KiranaCategory/77c89f32844045159793d6f63a792adb.jpg" alt="">
+            <h6>Deodrant & Fragrance</h6>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-5">
+      <div class="container">
+        <img class="w-100" src="https://www.merokirana.com/static/media/vendor_form.4ff0a067.jpeg" alt="">
+      </div>
+    </section>
+
+    <section>
+      <div class="container pt-4">
+        <strong class="text-lg-left">MeroKirana: Your One-Stop Online Grocery Store in Nepal</strong>
+        <p class="pt-3">Welcome to "Kirana", "MeroKirana", your trusted online shopping destination. We are proudly owned and managed by Kirana Pasal Pvt. Ltd., a company officially registered with the Office of the Company Registrar (Reg. No. 166928/073/074) and headquartered in the vibrant hub of Kamalpokhari, Ward No. 28, Kathmandu (Registration No. 000000001471, registered on 2076/04/23 at Kathmandu Metropolitan City). Our business is also VAT-registered under the number 605966231, ensuring compliance and transparency in all our operations. At Kirana, we are committed to providing exceptional service. For any questions or assistance, our friendly customer support team is just a call away at 01-4511000 or 9801143503. Shop with confidence, knowing we’re here to make your experience seamless and satisfying.</p>
+        <p class="pt-4">We offer a wide range of products including rice, dal, cooking oil, shampoos, beauty products, diapers, baby food, and much more.</p>
+        <p class="pt-3">Skip the crowded markets and shop from the comfort of your home at <a href="https://www.merokirana.com.">https://www.merokirana.com.</a></p>
+        <p class="pt-3">Our reliable and fast delivery service ensures all your essential items reach your doorstep on time. Experience hassle-free shopping, secure payment options, and exceptional customer service with MeroKirana—the smart choice for modern living in Nepal.</p>
+      </div>
+    </section>
+
+    <footer class="pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2">
+            <p>logo</p>
+            <p>Home</p>
+            <p>About Us</p>
+            <p>How to Order</p>
+            <p>Support</p>
+          </div>
+          <div class="col-lg-2">
+            <p>logo</p>
+            <p>Home</p>
+            <p>About Us</p>
+            <p>How to Order</p>
+            <p>Support</p>
+          </div>
+          <div class="col-lg-2">
+            <p>logo</p>
+            <p>Home</p>
+            <p>About Us</p>
+            <p>How to Order</p>
+            <p>Support</p>
+          </div>
+          <div class="col-lg-2">
+            <p>logo</p>
+            <p>Home</p>
+            <p>About Us</p>
+            <p>How to Order</p>
+            <p>Support</p>
+          </div>
+          <div class="col-lg-2">
+            <p>logo</p>
+            <p>Home</p>
+            <p>About Us</p>
+            <p>How to Order</p>
+            <p>Support</p>
+          </div>
+          <div class="col-lg-2">
+            <p>logo</p>
+            <p>Home</p>
+            <p>About Us</p>
+            <p>How to Order</p>
+            <p>Support</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 5,
+      spaceBetween: 0,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+        },
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 0,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 0,
+        },
+        1024: {
+          slidesPerView: 5,
+          spaceBetween: 0,
+        },
+      },
+    });
+  </script>
+  </body>
+</html>
+
